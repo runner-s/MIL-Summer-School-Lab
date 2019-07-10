@@ -8,10 +8,10 @@ Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ### Content Structure               
-├── lab2-program-nbgao.ipynb       
-├── lab2-program-nbgao.html         
-├── lab2-note-nbgao.ipynb           
-├── lab2-note-nbgao.html            
+├── lab2-program-nbgao.html
+├── lab2-program-nbgao.ipynb         
+├── lab2-note-nbgao.html        
+├── lab2-note-nbgao.ipynb            
 └── readme.md
 
 ### V1.0.0 Version Update
