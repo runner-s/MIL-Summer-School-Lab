@@ -8,13 +8,13 @@
 
 This repository contains some labs of the MIL-Summer-Schools which submitted by nbgao.
 
-## Project Address
+## Project Website
 
 [媒体智能实验室 2019 暑期班](https://hdumil.github.io/summer-school/)
 
 ## Lab Website
 
-[Media Intelligent Lab (MIL)](http://mil.hdu.edu.cn/)
+[Media Intelligence Laboratory, MIL (MIL)](http://mil.hdu.edu.cn/)
 
 
 
