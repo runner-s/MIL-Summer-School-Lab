@@ -10,13 +10,13 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 ### Content Structure   
  .  
 ├── Fomula  
- |&nbsp├── LinearRegression.jpg  
- |&nbsp├── LogisticRegression.jpg  
- |&nbsp└── SupportVectorMachine.jpg  
+ |&emsp;├── LinearRegression.jpg  
+ |&emsp;├── LogisticRegression.jpg  
+ |&emsp;└── SupportVectorMachine.jpg  
 ├── SourceCode  
- |&nbsp├── LogisticRegression.html  
- |&nbsp├── LogisticRegression.ipynb    
- |&nbsp└── testSet.txt    
+ |&emsp;├── LogisticRegression.html  
+ |&emsp;├── LogisticRegression.ipynb    
+ |&emsp;└── testSet.txt    
 ├── lab2-program-nbgao.html  
 ├── lab2-program-nbgao.ipynb  
 ├── lab2-note-nbgao.html  
