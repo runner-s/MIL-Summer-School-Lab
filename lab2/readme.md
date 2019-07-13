@@ -8,18 +8,18 @@ Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ### Content Structure   
-.  
+ .  
 ├── Fomula  
-|   ├── LinearRegression.jpg  
-|   ├── LogisticRegression.jpg  
-|   └── SupportVectorMachine.jpg  
+ |&nbsp├── LinearRegression.jpg  
+ |&nbsp├── LogisticRegression.jpg  
+ |&nbsp└── SupportVectorMachine.jpg  
 ├── SourceCode  
-|   ├── LogisticRegression.html  
-|   ├── LogisticRegression.ipynb    
-|   └── testSet.txt    
+ |&nbsp├── LogisticRegression.html  
+ |&nbsp├── LogisticRegression.ipynb    
+ |&nbsp└── testSet.txt    
 ├── lab2-program-nbgao.html  
 ├── lab2-program-nbgao.ipynb  
-├── lab2-note-nbgao.html
+├── lab2-note-nbgao.html  
 ├── lab2-note-nbgao.ipynb  
 └── readme.md  
 
