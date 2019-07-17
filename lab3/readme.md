@@ -8,8 +8,6 @@ Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure   
-
- .  
 ├── lab3-program-nbgao.html  
 ├── lab3-program-nbgao.ipynb    
 └── readme.md  
