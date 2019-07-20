@@ -1,4 +1,6 @@
-##  MIL-Summer-School-Lab
+#  MIL-Summer-School-Lab
+
+## Introduction
 
 #### Repository Author: 高鹏昺(nbgao)
 
