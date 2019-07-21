@@ -24,8 +24,6 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 | &emsp;└──centroid100.png  
 ├── lab3-program-nbgao.html  
 ├── lab3-program-nbgao.ipynb    
-├── lab3-Paper-Implement-nbgao.ipynb  
-├── lab3-Paper-Implement-nbgao.html  
 └── readme.md  
 
 ##  Main Content
