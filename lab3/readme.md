@@ -9,8 +9,8 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure   
 ├──Paper-Implement  
-| ├──lab3-Paper-Implement-Report-nbgao.pdf 
-| ├──lab3-Paper-Implement-Report-nbgao.md 
+| ├──lab3-Paper-Implement-Report-nbgao.pdf  
+| ├──lab3-Paper-Implement-Report-nbgao.md  
 | ├──lab3-Paper-Implement-1-nbgao.ipynb  
 | ├──lab3-Paper-Implement-1-nbgao.html  
 | ├──lab3-Paper-Implement-2-nbgao.ipynb  
@@ -31,8 +31,8 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 4. Paper Implement Program $ Report
 
 ## Version Update
-2019.07.17 V1.0.0 First draft
-2019.07.20 V2.0.0 Second draft
+2019.07.17 V1.0.0 First draft  
+2019.07.20 V2.0.0 Second draft  
 2019.07.21 V3.0.0 Final draft
 
 
