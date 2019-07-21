@@ -28,7 +28,8 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 1. Naive Bayes
 2. K-Means
 3. PCA
-4. Paper Implement Program $ Report
+4. Paper Implement Program
+5. Paper Implement Report
 
 ## Version Update
 2019.07.17 V1.0.0 First draft  
