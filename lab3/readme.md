@@ -31,9 +31,23 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 4. Paper Implement Program
 5. Paper Implement Report
 
+### Implementation Result
+data_num|K|M|W|S|hard/soft|Accuracy
+:-:|:-:|:-:|:-:|:-:|:-:|:-:
+1000|1000|10|6|1|hard|87.8%
+1000|1000|10|6|1|soft|95.1%
+5000|500|10|6|1|hard|94.9%
+5000|500|10|6|1|soft|97.2%
+10000|500|10|6|1|hard|96.1%
+10000|500|10|6|1|soft|98.1%
+
 ## Version Update
 2019.07.17 V1.0.0 First draft  
 2019.07.20 V2.0.0 Second draft  
-2019.07.21 V3.0.0 Final draft
+2019.07.21 V3.0.0 Final draft  
+2019.07.21 V4.0.0 Complete draft  
+
+
+
 
 
