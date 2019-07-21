@@ -3,21 +3,25 @@
 #### Author: Gao Pengbing
 #### Email: nbgao@126.com
 
+## Assignment
+实验 #3 Scikit-learn 无监督学习实战与代码复现入门
+https://hdumil.github.io/summer-school/assignments/lab3/
+
 ## Environment
 Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure   
 ├──Paper-Implement  
-| ├──lab3-Paper-Implement-Report-nbgao.pdf  
-| ├──lab3-Paper-Implement-Report-nbgao.md  
-| ├──lab3-Paper-Implement-1-nbgao.ipynb  
-| ├──lab3-Paper-Implement-1-nbgao.html  
-| ├──lab3-Paper-Implement-2-nbgao.ipynb  
-| ├──lab3-Paper-Implement-2-nbgao.html  
-| ├──lab3-Paper-Implement-3-nbgao.ipynb  
-| ├──lab3-Paper-Implement-3-nbgao.html  
-| └──centroid100.png  
+| &emsp;├──lab3-Paper-Implement-Report-nbgao.pdf  
+| &emsp;├──lab3-Paper-Implement-Report-nbgao.md  
+| &emsp;├──lab3-Paper-Implement-1-nbgao.ipynb  
+| &emsp;├──lab3-Paper-Implement-1-nbgao.html  
+| &emsp;├──lab3-Paper-Implement-2-nbgao.ipynb  
+| &emsp;├──lab3-Paper-Implement-2-nbgao.html  
+| &emsp;├──lab3-Paper-Implement-3-nbgao.ipynb  
+| &emsp;├──lab3-Paper-Implement-3-nbgao.html  
+| &emsp;└──centroid100.png  
 ├── lab3-program-nbgao.html  
 ├── lab3-program-nbgao.ipynb    
 ├── lab3-Paper-Implement-nbgao.ipynb  
@@ -31,7 +35,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 4. Paper Implement Program
 5. Paper Implement Report
 
-### Implementation Result
+### Paper Implementation Result
 data_num|K|M|W|S|hard/soft|Accuracy
 :-:|:-:|:-:|:-:|:-:|:-:|:-:
 1000|1000|10|6|1|hard|87.8%

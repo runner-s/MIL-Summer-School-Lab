@@ -3,12 +3,15 @@
 #### Author: Gao Pengbing
 #### Email: nbgao@126.com
 
-### Environment
+## Assignment
+实验 #2 决策树、线性模型与支持向量机
+https://hdumil.github.io/summer-school/assignments/lab2/
+
+## Environment
 Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
-### Content Structure   
- .  
+## Content Structure    
 ├── Fomula  
  |&emsp;├── LinearRegression.jpg  
  |&emsp;├── LogisticRegression.jpg  
@@ -23,7 +26,6 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 ├── lab2-note-nbgao.ipynb  
 └── readme.md  
 
-### Version Update
-2019.07.10 V1.0.0 First draft
-
+## Version Update
+2019.07.10 V1.0.0 First draft  
 2019.07.13 V2.0.0 Final draft
