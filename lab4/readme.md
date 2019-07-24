@@ -12,14 +12,26 @@ Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure   
-├── lab4-Reforcement-Learning-nbgao  
+├── Image
+|&emsp;├── gym-cartpole.png
+|&emsp;├── humanoid.png
+|&emsp;├── mujoco-body_interaction.png
+├── lab4-Reforcement-Learning-nbgao.ipynb  
+├── lab4-Reforcement-Learning-nbgao.html  
+├── lab4-Gym&Mujoco-nbgao.ipynb 
+├── lab4-Gym&Mujoco-nbgao.html 
+├── gym1.py 
 └── readme.md  
 
 ##  Main Content
-1. Reforcement Learning
+1. Reforcement learning algorithm
+2. Reforcement environment (Gym & Mujoco)
+3. Gym simple example program
+4. Screen capture about RL environment
 
 ## Version Update
 2019.07.23 V1.0.0 First draft  
+2019.07.23 V2.0.0 Second draft
   
 
 
