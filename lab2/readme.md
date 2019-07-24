@@ -4,7 +4,7 @@
 #### Email: nbgao@126.com
 
 ## Assignment
-实验 #2 决策树、线性模型与支持向量机
+### 实验 #2 决策树、线性模型与支持向量机
 https://hdumil.github.io/summer-school/assignments/lab2/
 
 ## Environment

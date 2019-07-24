@@ -4,7 +4,7 @@
 #### Email: nbgao@126.com
 
 ## Assignment
-实验 #4 强化学习入门  
+### 实验 #4 强化学习入门  
 https://hdumil.github.io/summer-school/assignments/lab4/
 
 ## Environment

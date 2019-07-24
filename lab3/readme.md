@@ -4,7 +4,7 @@
 #### Email: nbgao@126.com
 
 ## Assignment
-实验 #3 Scikit-learn 无监督学习实战与代码复现入门
+### 实验 #3 Scikit-learn 无监督学习实战与代码复现入门
 https://hdumil.github.io/summer-school/assignments/lab3/
 
 ## Environment
