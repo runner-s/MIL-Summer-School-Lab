@@ -12,15 +12,15 @@ Ubuntu18.04
 Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure   
-├── Image
-|&emsp;├── gym-cartpole.png
-|&emsp;├── humanoid.png
-|&emsp;├── mujoco-body_interaction.png
+├── Image  
+|&emsp;├── gym-cartpole.png  
+|&emsp;├── humanoid.png  
+|&emsp;├── mujoco-body_interaction.png  
 ├── lab4-Reforcement-Learning-nbgao.ipynb  
 ├── lab4-Reforcement-Learning-nbgao.html  
-├── lab4-Gym&Mujoco-nbgao.ipynb 
-├── lab4-Gym&Mujoco-nbgao.html 
-├── gym1.py 
+├── lab4-Gym&Mujoco-nbgao.ipynb  
+├── lab4-Gym&Mujoco-nbgao.html  
+├── gym1.py  
 └── readme.md  
 
 ##  Main Content
@@ -31,7 +31,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Version Update
 2019.07.23 V1.0.0 First draft  
-2019.07.23 V2.0.0 Second draft
+2019.07.24 V2.0.0 Second draft
   
 
 
