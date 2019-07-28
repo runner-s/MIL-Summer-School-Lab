@@ -12,7 +12,7 @@
 本论文的核心工作是使用无监督方法对图像数据集进行特征学习,然后通过提取图像特征,进行分类任务.
 论文中特征学习的方法主要应用了以下4种:
 1. 稀疏自编码器(sparse antu-encoders)
-2. 稀疏玻尔兹曼机(sparse RBMs)
+2. 稀疏受限玻尔兹曼机(sparse RBMs)
 3. K-means聚类(K-means clustering)
 4. 高斯混合模型(Gaussian mixtures)
    
@@ -30,10 +30,11 @@
 $$ x_{ij}^{'} = \frac{x_{ij}-u}{\sigma}$$
 其中,$x_{ij}$表示每个子块$i$行$j$列的像素值,$u$表示每个子块内像素的平均值,$\sigma$表示每个子块内像素的标准差.
 
-1. 经过标准化后的所有子块可以选择性地使用**白化(whitening)** 操作.关于这个操作论文中没有细致介绍其原理,可以参考[其他资料](https://my.oschina.net/findbill/blog/543485).
-   
+2. 经过标准化后的所有子块可以选择性地使用**白化(whitening)** 操作.关于这个操作论文中没有细致介绍其原理,可以参考[其他资料](https://my.oschina.net/findbill/blog/543485).
+$$ x_{rot}=U^Tx $$  $$ x_{PCA_{white,i}}=\frac{x_{rot,i}}{\sqrt{\lambda_i+\epsilon}} $$
+
 #### (3) 无监督特征学习阶段
-无监督学习算法作为一个"黑盒"利用数据集X和输出函数$f:\mathbb R^N \rightarrow\mathbb R^K$,该函数映射了输入子块向量$x^{(i)}到新的$K$维特征向量$,其中$K$为无监督算法的参数(K-means方法中表示聚类数).第$k$个特征用$f_k$表示.
+无监督学习算法作为一个"黑盒"利用数据集X和输出函数$f:\mathbb R^N \rightarrow\mathbb R^K$,该函数映射了输入子块向量$x^{(i)}$到新的$K$维特征向量,其中$K$为无监督算法的参数(K-means方法中表示聚类数).第$k$个特征用$f_k$表示.
 论文中的无监督学习方法包括了4种:稀疏自编码,稀疏RBMs,K-means聚类和高斯混合模型.
 这里我们重点关注其中的**K-means聚类算法**.
 在特征学习阶段K-means聚类算法用来从输入数据学习$K$个中心(centroids),第$k$个中心用$c^{(k)}$表示.
