@@ -20,6 +20,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 ├── lab4-Reforcement-Learning-nbgao.html  
 ├── lab4-Gym&Mujoco-nbgao.ipynb  
 ├── lab4-Gym&Mujoco-nbgao.html  
+├── lab4-Gym&Mujoco-nbgao.md  
 ├── gym1.py  
 └── readme.md  
 
@@ -32,7 +33,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 ## Version Update
 2019.07.23 V1.0.0 First draft  
 2019.07.24 V2.0.0 Second draft
-  
+
 
 
 
