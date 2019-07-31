@@ -13,8 +13,8 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure    
 ```html
-├──lab5-CNN-nbgao.ipynb          # CNN experiment ipynb file
-├──lab5-CNN-nbgao.html           # CNN experiment html file
+├── lab5-CNN-nbgao.ipynb          # CNN experiment ipynb file
+├── lab5-CNN-nbgao.html           # CNN experiment html file
 └── net.py      			      # CNN models file
 ```
 
@@ -24,6 +24,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Version Update
 2019.07.30  V1.0.0 First draft  
+2019.07.31  V2.0.0 Second draft
 
 
 
