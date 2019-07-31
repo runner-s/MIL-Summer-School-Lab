@@ -20,7 +20,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ##  Main Content
 1. Convolution Neural Network
-2. Two Layers Neural Network
+~~2. Two Layers Neural Network~~
 
 ## Version Update
 2019.07.30  V1.0.0 First draft  
