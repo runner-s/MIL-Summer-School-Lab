@@ -16402,7 +16402,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
@@ -16430,7 +16430,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hyperparameters</span>
@@ -16446,7 +16446,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_tf</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">(</span>
@@ -17140,98 +17140,6 @@ Total Time: 40.8s.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
-    <span class="c1"># 每轮训练完测试</span>
-    <span class="n">train</span><span class="p">(</span><span class="n">epoch</span><span class="p">)</span>
-    <span class="n">test</span><span class="p">()</span>
-
-<span class="n">time_end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total Time: </span><span class="si">{:.1f}</span><span class="s1">s.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time_end</span><span class="o">-</span><span class="n">time_start</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Train Epoch: 1 [00000/60000 (0%)]	Loss: 229.927429
-Train Epoch: 1 [20000/60000 (33%)]	Loss: 130.008499
-Train Epoch: 1 [40000/60000 (67%)]	Loss: 22.986048
-
-Test set: Average loss: 0.0663, Accuracy: 9778/10000 (97.78%)
-
-Train Epoch: 2 [00000/60000 (0%)]	Loss: 5.717216
-Train Epoch: 2 [20000/60000 (33%)]	Loss: 0.849236
-Train Epoch: 2 [40000/60000 (67%)]	Loss: 9.005154
-
-Test set: Average loss: 0.0523, Accuracy: 9828/10000 (98.28%)
-
-Train Epoch: 3 [00000/60000 (0%)]	Loss: 6.614645
-Train Epoch: 3 [20000/60000 (33%)]	Loss: 1.233495
-Train Epoch: 3 [40000/60000 (67%)]	Loss: 0.798077
-
-Test set: Average loss: 0.0335, Accuracy: 9882/10000 (98.82%)
-
-Train Epoch: 4 [00000/60000 (0%)]	Loss: 2.101755
-Train Epoch: 4 [20000/60000 (33%)]	Loss: 3.027740
-Train Epoch: 4 [40000/60000 (67%)]	Loss: 2.509169
-
-Test set: Average loss: 0.0296, Accuracy: 9894/10000 (98.94%)
-
-Train Epoch: 5 [00000/60000 (0%)]	Loss: 2.064038
-Train Epoch: 5 [20000/60000 (33%)]	Loss: 4.181707
-Train Epoch: 5 [40000/60000 (67%)]	Loss: 0.567227
-
-Test set: Average loss: 0.0304, Accuracy: 9896/10000 (98.96%)
-
-Train Epoch: 6 [00000/60000 (0%)]	Loss: 0.295217
-Train Epoch: 6 [20000/60000 (33%)]	Loss: 4.092025
-Train Epoch: 6 [40000/60000 (67%)]	Loss: 2.751363
-
-Test set: Average loss: 0.0298, Accuracy: 9907/10000 (99.07%)
-
-Train Epoch: 7 [00000/60000 (0%)]	Loss: 0.829329
-Train Epoch: 7 [20000/60000 (33%)]	Loss: 0.717412
-Train Epoch: 7 [40000/60000 (67%)]	Loss: 0.227972
-
-Test set: Average loss: 0.0321, Accuracy: 9910/10000 (99.10%)
-
-Train Epoch: 8 [00000/60000 (0%)]	Loss: 0.496195
-Train Epoch: 8 [20000/60000 (33%)]	Loss: 7.475291
-Train Epoch: 8 [40000/60000 (67%)]	Loss: 0.274931
-
-Test set: Average loss: 0.0256, Accuracy: 9918/10000 (99.18%)
-
-Train Epoch: 9 [00000/60000 (0%)]	Loss: 0.100369
-Train Epoch: 9 [20000/60000 (33%)]	Loss: 0.116061
-Train Epoch: 9 [40000/60000 (67%)]	Loss: 0.886356
-
-Test set: Average loss: 0.0253, Accuracy: 9927/10000 (99.27%)
-
-Total Time: 99.1s.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -17614,7 +17522,7 @@ Total Time: 96.2s.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>
@@ -17630,12 +17538,12 @@ Total Time: 96.2s.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">VGG</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">VGG16</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">VGG</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>    <span class="c1"># (N, 3, 224, 224)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">VGG16</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>    <span class="c1"># (N, 3, 224, 224)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">layer1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 64, 224, 224)</span>
             <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
@@ -17713,10 +17621,10 @@ Total Time: 96.2s.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cnn</span> <span class="o">=</span> <span class="n">VGG</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cnn</span> <span class="o">=</span> <span class="n">VGG16</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">stat</span><span class="p">(</span><span class="n">cnn</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">))</span>
 </pre></div>
 
@@ -17740,51 +17648,45 @@ Total Time: 96.2s.
 [MAdd]: Dropout is not supported!
 [Flops]: Dropout is not supported!
 [Memory]: Dropout is not supported!
-[MAdd]: Dropout is not supported!
-[Flops]: Dropout is not supported!
-[Memory]: Dropout is not supported!
-[MAdd]: Dropout is not supported!
-[Flops]: Dropout is not supported!
-[Memory]: Dropout is not supported!
       module name  input shape output shape       params memory(MB)              MAdd             Flops   MemRead(B)  MemWrite(B) duration[%]    MemR+W(B)
-0        layer1.0    3 224 224   64 224 224       1792.0      12.25     173,408,256.0      89,915,392.0     609280.0   12845056.0       1.60%   13454336.0
-1        layer1.1   64 224 224   64 224 224          0.0      12.25       3,211,264.0       3,211,264.0   12845056.0   12845056.0       0.31%   25690112.0
-2        layer1.2   64 224 224   64 224 224      36928.0      12.25   3,699,376,128.0   1,852,899,328.0   12992768.0   12845056.0       5.44%   25837824.0
-3        layer1.3   64 224 224   64 224 224          0.0      12.25       3,211,264.0       3,211,264.0   12845056.0   12845056.0       0.24%   25690112.0
-4        layer1.4   64 224 224   64 112 112          0.0       3.06       2,408,448.0       3,211,264.0   12845056.0    3211264.0       2.71%   16056320.0
-5        layer2.0   64 112 112  128 112 112      73856.0       6.12   1,849,688,064.0     926,449,664.0    3506688.0    6422528.0       2.35%    9929216.0
-6        layer2.1  128 112 112  128 112 112          0.0       6.12       1,605,632.0       1,605,632.0    6422528.0    6422528.0       0.12%   12845056.0
-7        layer2.2  128 112 112  128 112 112     147584.0       6.12   3,699,376,128.0   1,851,293,696.0    7012864.0    6422528.0       4.20%   13435392.0
-8        layer2.3  128 112 112  128 112 112          0.0       6.12       1,605,632.0       1,605,632.0    6422528.0    6422528.0       0.24%   12845056.0
-9        layer2.4  128 112 112  128  56  56          0.0       1.53       1,204,224.0       1,605,632.0    6422528.0    1605632.0       1.24%    8028160.0
-10       layer3.0  128  56  56  256  56  56     295168.0       3.06   1,849,688,064.0     925,646,848.0    2786304.0    3211264.0       2.22%    5997568.0
-11       layer3.1  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.06%    6422528.0
-12       layer3.2  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       3.69%    8782848.0
+0        layer1.0    3 224 224   64 224 224       1792.0      12.25     173,408,256.0      89,915,392.0     609280.0   12845056.0       2.65%   13454336.0
+1        layer1.1   64 224 224   64 224 224          0.0      12.25       3,211,264.0       3,211,264.0   12845056.0   12845056.0       0.51%   25690112.0
+2        layer1.2   64 224 224   64 224 224      36928.0      12.25   3,699,376,128.0   1,852,899,328.0   12992768.0   12845056.0       8.30%   25837824.0
+3        layer1.3   64 224 224   64 224 224          0.0      12.25       3,211,264.0       3,211,264.0   12845056.0   12845056.0       0.43%   25690112.0
+4        layer1.4   64 224 224   64 112 112          0.0       3.06       2,408,448.0       3,211,264.0   12845056.0    3211264.0       7.37%   16056320.0
+5        layer2.0   64 112 112  128 112 112      73856.0       6.12   1,849,688,064.0     926,449,664.0    3506688.0    6422528.0       3.95%    9929216.0
+6        layer2.1  128 112 112  128 112 112          0.0       6.12       1,605,632.0       1,605,632.0    6422528.0    6422528.0       0.21%   12845056.0
+7        layer2.2  128 112 112  128 112 112     147584.0       6.12   3,699,376,128.0   1,851,293,696.0    7012864.0    6422528.0       8.06%   13435392.0
+8        layer2.3  128 112 112  128 112 112          0.0       6.12       1,605,632.0       1,605,632.0    6422528.0    6422528.0       0.22%   12845056.0
+9        layer2.4  128 112 112  128  56  56          0.0       1.53       1,204,224.0       1,605,632.0    6422528.0    1605632.0       2.20%    8028160.0
+10       layer3.0  128  56  56  256  56  56     295168.0       3.06   1,849,688,064.0     925,646,848.0    2786304.0    3211264.0       2.97%    5997568.0
+11       layer3.1  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.12%    6422528.0
+12       layer3.2  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       6.51%    8782848.0
 13       layer3.3  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.06%    6422528.0
-14       layer3.4  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       4.82%    8782848.0
-15       layer3.5  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.07%    6422528.0
-16       layer3.6  256  56  56  256  28  28          0.0       0.77         602,112.0         802,816.0    3211264.0     802816.0       0.87%    4014080.0
-17       layer4.0  256  28  28  512  28  28    1180160.0       1.53   1,849,688,064.0     925,245,440.0    5523456.0    1605632.0       2.32%    7129088.0
-18       layer4.1  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.05%    3211264.0
-19       layer4.2  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       4.66%   12650496.0
-20       layer4.3  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.17%    3211264.0
-21       layer4.4  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       3.97%   12650496.0
-22       layer4.5  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.13%    3211264.0
-23       layer4.6  512  28  28  512  14  14          0.0       0.38         301,056.0         401,408.0    1605632.0     401408.0       0.35%    2007040.0
-24       layer5.0  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       1.37%   10242048.0
-25       layer5.1  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.12%     802816.0
-26       layer5.2  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       1.32%   10242048.0
-27       layer5.3  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.04%     802816.0
-28       layer5.4  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       1.58%   10242048.0
-29       layer5.5  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.15%     802816.0
-30       layer5.6  512  14  14  512   7   7          0.0       0.10          75,264.0         100,352.0     401408.0     100352.0       0.11%     501760.0
-31       layer6.0        25088         4096  102764544.0       0.02     205,516,800.0     102,760,448.0  411158528.0      16384.0      52.01%  411174912.0
+14       layer3.4  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       6.65%    8782848.0
+15       layer3.5  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.09%    6422528.0
+16       layer3.6  256  56  56  256  28  28          0.0       0.77         602,112.0         802,816.0    3211264.0     802816.0       1.04%    4014080.0
+17       layer4.0  256  28  28  512  28  28    1180160.0       1.53   1,849,688,064.0     925,245,440.0    5523456.0    1605632.0       3.58%    7129088.0
+18       layer4.1  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.04%    3211264.0
+19       layer4.2  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       7.34%   12650496.0
+20       layer4.3  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.04%    3211264.0
+21       layer4.4  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       6.43%   12650496.0
+22       layer4.5  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.04%    3211264.0
+23       layer4.6  512  28  28  512  14  14          0.0       0.38         301,056.0         401,408.0    1605632.0     401408.0       0.60%    2007040.0
+24       layer5.0  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       2.06%   10242048.0
+25       layer5.1  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.02%     802816.0
+26       layer5.2  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       1.94%   10242048.0
+27       layer5.3  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.18%     802816.0
+28       layer5.4  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       2.11%   10242048.0
+29       layer5.5  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.17%     802816.0
+30       layer5.6  512  14  14  512   7   7          0.0       0.10          75,264.0         100,352.0     401408.0     100352.0       0.16%     501760.0
+31       layer6.0        25088         4096  102764544.0       0.02     205,516,800.0     102,760,448.0  411158528.0      16384.0      22.39%  411174912.0
 32       layer6.1         4096         4096          0.0       0.02           4,096.0           4,096.0      16384.0      16384.0       0.02%      32768.0
-33       layer6.2         4096         4096          0.0       0.02               0.0               0.0          0.0          0.0       0.04%          0.0
-34       layer7.0         4096         4096   16781312.0       0.02      33,550,336.0      16,777,216.0   67141632.0      16384.0       1.04%   67158016.0
-35       layer7.1         4096         4096          0.0       0.02           4,096.0           4,096.0      16384.0      16384.0       0.02%      32768.0
-36       layer7.2         4096         4096          0.0       0.02               0.0               0.0          0.0          0.0       0.03%          0.0
-37       layer8.0         4096           10      40970.0       0.00          81,910.0          40,960.0     180264.0         40.0       0.22%     180304.0
+33       layer6.2         4096         4096          0.0       0.02               0.0               0.0          0.0          0.0       0.02%          0.0
+34       layer7.0         4096         4096   16781312.0       0.02      33,550,336.0      16,777,216.0   67141632.0      16384.0       1.31%   67158016.0
+35       layer7.1         4096         4096          0.0       0.02           4,096.0           4,096.0      16384.0      16384.0       0.01%      32768.0
+36       layer7.2         4096         4096          0.0       0.02               0.0               0.0          0.0          0.0       0.01%          0.0
+37       layer8.0         4096           10      40970.0       0.00          81,910.0          40,960.0     180264.0         40.0       0.19%     180304.0
 total                                        134301514.0     109.29  30,950,557,174.0  15,499,433,984.0     180264.0         40.0     100.00%  766942544.0
 ==========================================================================================================================================================
 Total params: 134,301,514
@@ -17804,16 +17706,16 @@ Total MemR+W: 731.41MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 选择CNN模型</span>
-<span class="n">cnn</span> <span class="o">=</span> <span class="n">VGG</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">cnn</span> <span class="o">=</span> <span class="n">VGG16</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
     <span class="n">cnn</span> <span class="o">=</span> <span class="n">cnn</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[VGGNet]: Use GPU&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[VGG-16]: Use GPU&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[VGGNet]: Use CPU&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[VGG-16]: Use CPU&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cnn</span><span class="p">)</span>
 
 
@@ -17824,49 +17726,6 @@ Total MemR+W: 731.41MB
 <span class="c1"># 损失函数: 交叉熵损失函数(CE)</span>
 <span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">(</span><span class="n">size_average</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">criterion</span><span class="p">)</span>
-
-<span class="c1"># 训练CNN模型</span>
-<span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">epoch</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">train_loader</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>  <span class="c1"># 使用GPU</span>
-            <span class="n">data</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">Variable</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">volatile</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">(),</span> <span class="n">Variable</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">volatile</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
-        <span class="c1"># 梯度清零</span>
-        <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
-        <span class="c1"># 模型预测结果</span>
-        <span class="n">predict</span> <span class="o">=</span> <span class="n">cnn</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-        <span class="c1"># 计算损失函数</span>
-        <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">predict</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
-        <span class="c1"># 误差反向传播</span>
-        <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
-        <span class="c1"># 更新网络参数</span>
-        <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
-        <span class="c1"># 输出训练阶段loss信息</span>
-        <span class="k">if</span> <span class="n">batch_idx</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Train Epoch: </span><span class="si">{}</span><span class="s1"> [</span><span class="si">{:05d}</span><span class="s1">/</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{:.0f}</span><span class="s1">%)]</span><span class="se">\t</span><span class="s1">Loss: </span><span class="si">{:.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                <span class="n">epoch</span><span class="p">,</span> <span class="n">batch_idx</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">),</span>
-                <span class="mf">100.</span> <span class="o">*</span> <span class="n">batch_idx</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_loader</span><span class="p">),</span> <span class="n">loss</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">item</span><span class="p">()))</span>
-
-<span class="c1"># 测试CNN模型</span>
-<span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
-    <span class="n">test_loss</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">data</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">test_loader</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>  <span class="c1"># 使用GPU</span>
-            <span class="n">data</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">Variable</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">volatile</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">(),</span> <span class="n">Variable</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">volatile</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
-        <span class="c1"># 模型预测结果</span>
-        <span class="n">predict</span> <span class="o">=</span> <span class="n">cnn</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-        <span class="c1"># 计算batch损失和</span>
-        <span class="n">test_loss</span> <span class="o">+=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">predict</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-        <span class="c1"># 预测label</span>
-        <span class="n">pred</span> <span class="o">=</span> <span class="n">predict</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="c1"># 预测正确数</span>
-        <span class="n">correct</span> <span class="o">+=</span> <span class="n">pred</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">label</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">view_as</span><span class="p">(</span><span class="n">pred</span><span class="p">))</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-    <span class="n">test_loss</span> <span class="o">/=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
-    <span class="c1"># 输出测试阶段loss信息</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Test set: Average loss: </span><span class="si">{:.4f}</span><span class="s1">, Accuracy: </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{:.2f}</span><span class="s1">%)</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-        <span class="n">test_loss</span><span class="p">,</span> <span class="n">correct</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">),</span>
-        <span class="n">correct</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="o">*</span><span class="mf">100.0</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)))</span>
 </pre></div>
 
     </div>
@@ -17883,8 +17742,8 @@ Total MemR+W: 731.41MB
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[VGGNet]: Use GPU
-VGG(
+<pre>[VGG-16]: Use GPU
+VGG16(
   (layer1): Sequential(
     (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
     (1): ReLU(inplace)
@@ -17980,17 +17839,361 @@ CrossEntropyLoss()
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="VGG-19">VGG-19<a class="anchor-link" href="#VGG-19">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">VGG19</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">VGG19</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>    <span class="c1"># (N, 3, 224, 224)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 64, 224, 224)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 64, 224, 224)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>    <span class="c1"># (N, 64, 112, 112)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 128, 112, 112)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 128, 112, 112)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>    <span class="c1"># (N, 128, 56, 56)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 256, 56, 56)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 256, 56, 56)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 256, 56, 56)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 256, 56, 56)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>    <span class="c1"># (N, 256, 28, 28)          </span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer4</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 28, 28)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 28, 28)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 28, 28)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 28, 28)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>        
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer5</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 14, 14)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 14, 14)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 14, 14)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>    <span class="c1"># (N, 512, 14, 14)</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># (N, 512, 7, 7)      </span>
+        <span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer6</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">512</span><span class="o">*</span><span class="mi">7</span><span class="o">*</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4096</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer7</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">4096</span><span class="p">,</span> <span class="mi">4096</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">()</span>     
+        <span class="p">)</span>     
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer8</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">4096</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">)</span>
+        <span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layer5</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layer4</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layer3</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layer2</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layer1</span><span class="p">(</span><span class="n">x</span><span class="p">)))))</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layer8</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layer7</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layer6</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+        <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="VGG-19-Parameters">VGG-19 Parameters<a class="anchor-link" href="#VGG-19-Parameters">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cnn</span> <span class="o">=</span> <span class="n">VGG19</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">stat</span><span class="p">(</span><span class="n">cnn</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[MAdd]: Dropout is not supported!
+[Flops]: Dropout is not supported!
+[Memory]: Dropout is not supported!
+[MAdd]: Dropout is not supported!
+[Flops]: Dropout is not supported!
+[Memory]: Dropout is not supported!
+[MAdd]: Dropout is not supported!
+[Flops]: Dropout is not supported!
+[Memory]: Dropout is not supported!
+[MAdd]: Dropout is not supported!
+[Flops]: Dropout is not supported!
+[Memory]: Dropout is not supported!
+      module name  input shape output shape       params memory(MB)              MAdd             Flops   MemRead(B)  MemWrite(B) duration[%]    MemR+W(B)
+0        layer1.0    3 224 224   64 224 224       1792.0      12.25     173,408,256.0      89,915,392.0     609280.0   12845056.0       2.43%   13454336.0
+1        layer1.1   64 224 224   64 224 224          0.0      12.25       3,211,264.0       3,211,264.0   12845056.0   12845056.0       0.42%   25690112.0
+2        layer1.2   64 224 224   64 224 224      36928.0      12.25   3,699,376,128.0   1,852,899,328.0   12992768.0   12845056.0       8.10%   25837824.0
+3        layer1.3   64 224 224   64 224 224          0.0      12.25       3,211,264.0       3,211,264.0   12845056.0   12845056.0       0.50%   25690112.0
+4        layer1.4   64 224 224   64 112 112          0.0       3.06       2,408,448.0       3,211,264.0   12845056.0    3211264.0       5.51%   16056320.0
+5        layer2.0   64 112 112  128 112 112      73856.0       6.12   1,849,688,064.0     926,449,664.0    3506688.0    6422528.0       3.74%    9929216.0
+6        layer2.1  128 112 112  128 112 112          0.0       6.12       1,605,632.0       1,605,632.0    6422528.0    6422528.0       0.19%   12845056.0
+7        layer2.2  128 112 112  128 112 112     147584.0       6.12   3,699,376,128.0   1,851,293,696.0    7012864.0    6422528.0       7.29%   13435392.0
+8        layer2.3  128 112 112  128 112 112          0.0       6.12       1,605,632.0       1,605,632.0    6422528.0    6422528.0       0.18%   12845056.0
+9        layer2.4  128 112 112  128  56  56          0.0       1.53       1,204,224.0       1,605,632.0    6422528.0    1605632.0       2.17%    8028160.0
+10       layer3.0  128  56  56  256  56  56     295168.0       3.06   1,849,688,064.0     925,646,848.0    2786304.0    3211264.0       3.33%    5997568.0
+11       layer3.1  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.23%    6422528.0
+12       layer3.2  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       6.02%    8782848.0
+13       layer3.3  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.14%    6422528.0
+14       layer3.4  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       6.15%    8782848.0
+15       layer3.5  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.10%    6422528.0
+16       layer3.6  256  56  56  256  56  56     590080.0       3.06   3,699,376,128.0   1,850,490,880.0    5571584.0    3211264.0       6.97%    8782848.0
+17       layer3.7  256  56  56  256  56  56          0.0       3.06         802,816.0         802,816.0    3211264.0    3211264.0       0.26%    6422528.0
+18       layer3.8  256  56  56  256  28  28          0.0       0.77         602,112.0         802,816.0    3211264.0     802816.0       1.04%    4014080.0
+19       layer4.0  256  28  28  512  28  28    1180160.0       1.53   1,849,688,064.0     925,245,440.0    5523456.0    1605632.0       3.35%    7129088.0
+20       layer4.1  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.05%    3211264.0
+21       layer4.2  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       6.70%   12650496.0
+22       layer4.3  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.08%    3211264.0
+23       layer4.4  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       7.08%   12650496.0
+24       layer4.5  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.07%    3211264.0
+25       layer4.6  512  28  28  512  28  28    2359808.0       1.53   3,699,376,128.0   1,850,089,472.0   11044864.0    1605632.0       6.82%   12650496.0
+26       layer4.7  512  28  28  512  28  28          0.0       1.53         401,408.0         401,408.0    1605632.0    1605632.0       0.07%    3211264.0
+27       layer4.8  512  28  28  512  14  14          0.0       0.38         301,056.0         401,408.0    1605632.0     401408.0       0.62%    2007040.0
+28       layer5.0  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       2.66%   10242048.0
+29       layer5.1  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.16%     802816.0
+30       layer5.2  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       2.42%   10242048.0
+31       layer5.3  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.06%     802816.0
+32       layer5.4  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       3.07%   10242048.0
+33       layer5.5  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.06%     802816.0
+34       layer5.6  512  14  14  512  14  14    2359808.0       0.38     924,844,032.0     462,522,368.0    9840640.0     401408.0       3.10%   10242048.0
+35       layer5.7  512  14  14  512  14  14          0.0       0.38         100,352.0         100,352.0     401408.0     401408.0       0.05%     802816.0
+36       layer5.8  512  14  14  512   7   7          0.0       0.10          75,264.0         100,352.0     401408.0     100352.0       0.19%     501760.0
+37       layer6.0        25088         4096  102764544.0       0.02     205,516,800.0     102,760,448.0  411158528.0      16384.0       7.11%  411174912.0
+38       layer6.1         4096         4096          0.0       0.02           4,096.0           4,096.0      16384.0      16384.0       0.04%      32768.0
+39       layer6.2         4096         4096          0.0       0.02               0.0               0.0          0.0          0.0       0.06%          0.0
+40       layer7.0         4096         4096   16781312.0       0.02      33,550,336.0      16,777,216.0   67141632.0      16384.0       1.04%   67158016.0
+41       layer7.1         4096         4096          0.0       0.02           4,096.0           4,096.0      16384.0      16384.0       0.04%      32768.0
+42       layer7.2         4096         4096          0.0       0.02               0.0               0.0          0.0          0.0       0.07%          0.0
+43       layer8.0         4096           10      40970.0       0.00          81,910.0          40,960.0     180264.0         40.0       0.27%     180304.0
+total                                        139611210.0     119.24  39,275,458,038.0  19,663,841,280.0     180264.0         40.0     100.00%  809054544.0
+==========================================================================================================================================================
+Total params: 139,611,210
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Total memory: 119.24MB
+Total MAdd: 39.28GMAdd
+Total Flops: 19.66GFlops
+Total MemR+W: 771.57MB
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 选择CNN模型</span>
+<span class="n">cnn</span> <span class="o">=</span> <span class="n">VGG19</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
+    <span class="n">cnn</span> <span class="o">=</span> <span class="n">cnn</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[VGG-19]: Use GPU&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[VGG-19]: Use CPU&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cnn</span><span class="p">)</span>
+
+
+<span class="c1"># 优化器参数</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">cnn</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">momentum</span><span class="p">,</span> <span class="n">weight_decay</span><span class="o">=</span><span class="n">weight_decay</span><span class="p">)</span>
+<span class="c1"># optimizer = optim.Adam(cnn.parameters(), lr=0.001, betas=(0.9, 0.99))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">optimizer</span><span class="p">)</span>
+<span class="c1"># 损失函数: 交叉熵损失函数(CE)</span>
+<span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">(</span><span class="n">size_average</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">criterion</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[VGG-19]: Use GPU
+VGG19(
+  (layer1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace)
+    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer2): Sequential(
+    (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace)
+    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer3): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace)
+    (4): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): ReLU(inplace)
+    (6): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace)
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer4): Sequential(
+    (0): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace)
+    (4): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): ReLU(inplace)
+    (6): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace)
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer5): Sequential(
+    (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace)
+    (4): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): ReLU(inplace)
+    (6): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace)
+    (8): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer6): Sequential(
+    (0): Linear(in_features=25088, out_features=4096, bias=True)
+    (1): ReLU(inplace)
+    (2): Dropout(p=0.5)
+  )
+  (layer7): Sequential(
+    (0): Linear(in_features=4096, out_features=4096, bias=True)
+    (1): ReLU(inplace)
+    (2): Dropout(p=0.5)
+  )
+  (layer8): Sequential(
+    (0): Linear(in_features=4096, out_features=10, bias=True)
+  )
+)
+SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0001
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)
+CrossEntropyLoss()
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="GoogLeNet">GoogLeNet<a class="anchor-link" href="#GoogLeNet">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Result">Result<a class="anchor-link" href="#Result">&#182;</a></h2><table>
 <thead><tr>
 <th style="text-align:center">CNN</th>
-<th style="text-align:center">time</th>
+<th style="text-align:center">Time</th>
 <th style="text-align:center">Accuracy</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:center">LeNet-5</td>
-<td style="text-align:center">55s</td>
+<td style="text-align:center">40.8s</td>
 <td style="text-align:center">99.21%</td>
 </tr>
 <tr>
@@ -17999,7 +18202,11 @@ CrossEntropyLoss()
 <td style="text-align:center">99.31%</td>
 </tr>
 <tr>
-<td style="text-align:center">VGGNet</td>
+<td style="text-align:center">VGG-16</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">VGG-19</td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -18015,6 +18222,19 @@ CrossEntropyLoss()
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>

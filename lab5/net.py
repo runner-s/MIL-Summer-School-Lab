@@ -106,9 +106,9 @@ class AlexNet(nn.Module):
 
 
 # VGG-16
-class VGG(nn.Module):
+class VGG16(nn.Module):
     def __init__(self, num_classes):
-        super(VGG, self).__init__()    # (N, 3, 224, 224)
+        super(VGG16, self).__init__()    # (N, 3, 224, 224)
         self.layer1 = nn.Sequential(
             nn.Conv2d(3, 64, kernel_size=3, padding=1),    # (N, 64, 224, 224)
             nn.ReLU(True),
@@ -170,3 +170,76 @@ class VGG(nn.Module):
         x = x.view(x.shape[0], -1)
         x = self.layer8(self.layer7(self.layer6(x)))
         return F.log_softmax(x)
+    
+
+# VGG-19
+class VGG19(nn.Module):
+    def __init__(self, num_classes):
+        super(VGG19, self).__init__()    # (N, 3, 224, 224)
+        self.layer1 = nn.Sequential(
+            nn.Conv2d(3, 64, kernel_size=3, padding=1),    # (N, 64, 224, 224)
+            nn.ReLU(True),
+            nn.Conv2d(64, 64, kernel_size=3, padding=1),    # (N, 64, 224, 224)
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2),    # (N, 64, 112, 112)
+        )
+        self.layer2 = nn.Sequential(
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),    # (N, 128, 112, 112)
+            nn.ReLU(True),
+            nn.Conv2d(128, 128, kernel_size=3, padding=1),    # (N, 128, 112, 112)
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2),    # (N, 128, 56, 56)
+        )
+        self.layer3 = nn.Sequential(
+            nn.Conv2d(128, 256, kernel_size=3, padding=1),    # (N, 256, 56, 56)
+            nn.ReLU(True),
+            nn.Conv2d(256, 256, kernel_size=3, padding=1),    # (N, 256, 56, 56)
+            nn.ReLU(True),
+            nn.Conv2d(256, 256, kernel_size=3, padding=1),    # (N, 256, 56, 56)
+            nn.ReLU(True),
+            nn.Conv2d(256, 256, kernel_size=3, padding=1),    # (N, 256, 56, 56)
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2),    # (N, 256, 28, 28)          
+        )
+        self.layer4 = nn.Sequential(
+            nn.Conv2d(256, 512, kernel_size=3, padding=1),    # (N, 512, 28, 28)
+            nn.ReLU(True),
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 28, 28)
+            nn.ReLU(True),
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 28, 28)
+            nn.ReLU(True),
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 28, 28)
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2)        
+        )
+        self.layer5 = nn.Sequential(
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 14, 14)
+            nn.ReLU(True),
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 14, 14)
+            nn.ReLU(True),
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 14, 14)
+            nn.ReLU(True),
+            nn.Conv2d(512, 512, kernel_size=3, padding=1),    # (N, 512, 14, 14)
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2)    # (N, 512, 7, 7)      
+        )
+        
+        self.layer6 = nn.Sequential(
+            nn.Linear(512*7*7, 4096),
+            nn.ReLU(True),
+            nn.Dropout()
+        )
+        self.layer7 = nn.Sequential(
+            nn.Linear(4096, 4096),
+            nn.ReLU(True),
+            nn.Dropout()     
+        )     
+        self.layer8 = nn.Sequential(
+            nn.Linear(4096, num_classes)
+        )
+    
+    def forward(self, x):
+        x = self.layer5(self.layer4(self.layer3(self.layer2(self.layer1(x)))))
+        x = x.view(x.shape[0], -1)
+        x = self.layer8(self.layer7(self.layer6(x)))
+        return x
