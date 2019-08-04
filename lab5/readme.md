@@ -26,7 +26,7 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 2019.07.30  V1.0.0 First draft  
 2019.07.31  V2.0.0 Second draft  
 2019.08.02  V3.0.0 Third draft  
-2019.08.04  V4.0.0 Forth draft  
+2019.08.04  V4.0.0 Fourth draft  
 
 
 
