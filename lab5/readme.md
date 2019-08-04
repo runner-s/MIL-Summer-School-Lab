@@ -13,20 +13,20 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 
 ## Content Structure    
 ```html
-├── lab5-CNN-nbgao.ipynb          # CNN experiment ipynb file
-├── lab5-CNN-nbgao.html           # CNN experiment html file
-└── net.py      			      # CNN models file
+├── lab5-CNN-nbgao.ipynb			# CNN experiment ipynb file
+├── lab5-CNN-nbgao.html				# CNN experiment html file
+└── net.py							# CNN models file
 ```
 
 ##  Main Content
-1. Convolution Neural Network
+1. Convolution Neural Network  
 ~~2. Two Layers Neural Network~~
 
 ## Version Update
 2019.07.30  V1.0.0 First draft  
-2019.07.31  V2.0.0 Second draft
-
-
+2019.07.31  V2.0.0 Second draft  
+2019.08.02  V3.0.0 Third draft  
+2019.08.04  V4.0.0 Forth draft  
 
 
 
