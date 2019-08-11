@@ -20,15 +20,19 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 ├── Translation			
 |	├── lab6-Translation-Seq2seq-nbgao.ipynb
 |	└── lab6-Translation-Seq2seq-nbgao.html
+├── Transformer.py
 └── readme.md
 ```
 
 ##  Main Content
 1. Text style auto generation  
 2. Translation with seq2seq model  
+3. Transformer (Self Attention)  
 
 ## Version Update
 2019.08.07  V1.0.0 First draft  
+2019.08.11  V2.0.0 Final draft  
+2020.
 
 
 
