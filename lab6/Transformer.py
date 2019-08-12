@@ -65,10 +65,10 @@ class MultiHeadAttention(nn.Module):
         return torch.matmul(s, v)
 
 
-# Feedforward Neural Net
-class FeedforwardNeuralNet(nn.Module):
+# Feed-forwardNet
+class FeedForwardNet(nn.Module):
     def __init__(self):
-        super(FeedforwardNeuralNet, self).__init__()
+        super(FeedForwardNet, self).__init__()
 
         self.mlp = MLP(
             in_size = HIDDEN_SIZE,
@@ -91,7 +91,7 @@ class SelfAttention(nn.Module):
         self.dropout1 = nn.Dropout(DROPOUT_R)
         self.norm1 = LayerNorm(HIDDEN_SIZE)
 
-        self.fnn = FeedforwardNeuralNet()
+        self.ffn = FeedForwardNet()
 
         self.dropout2 = nn.Dropout(DROPOUT_R)
         self.norm2 = LayerNorm(HIDDEN_SIZE)
@@ -102,7 +102,7 @@ class SelfAttention(nn.Module):
         )
 
         y = self.norm2(
-            y + self.dropout2(self.fnn(y))
+            y + self.dropout2(self.ffn(y))
         )
         return y
 
