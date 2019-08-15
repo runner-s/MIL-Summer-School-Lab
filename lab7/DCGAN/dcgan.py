@@ -2,10 +2,11 @@ import torch
 import torch.nn as nn
 import torch.nn.parallel
 import torch.optim as optim
-import torch.utils.data
+import torch.utils.data as data
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 import torchvision.utils as utils
+from torchvision.datasets import CIFAR10
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,6 +26,15 @@ beta1 = 0.5
 ngpu = 1
 
 device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu>0) else "cpu")
+
+transform = transforms.Compose([
+    transforms.Resize(image_size),
+    transforms.ToTensor(),
+    transforms.Normalize([0.5]*3, [0.5]*3)
+])
+
+dataset = CIFAR10(root='../data/', transform=transform, download=False)
+dataloader = data.DataLoader(dataset, batch_size, shuffle=True,  num_workers=workers)
 
 
 def weights_init(m):
@@ -65,7 +75,7 @@ class Generator(nn.Module):
         return self.generator(x)
 
 
-netG = Generator(ngpu).tp(device)
+netG = Generator(ngpu).to(device)
 
 if (device.type=='cuda' and ngpu>1):
     netG = nn.DataParallel(netG, list(range(ngpu)))
