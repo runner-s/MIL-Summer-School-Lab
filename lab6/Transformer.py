@@ -141,7 +141,7 @@ class MLP(nn.Module):
 class LayerNorm(nn.Module):
     def __init__(self, size, eps=1e-6):
         super(LayerNorm, self).__init__()
-        self.eps = Ellipsis
+        self.eps = eps
         self.a = nn.Parameter(torch.ones(size))
         self.b = nn.Parameter(torch.zeors(size))
     
