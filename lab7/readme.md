@@ -14,18 +14,20 @@ Anaconda3 + Python3.7.0 + Jupyter Notebook + PyCharm
 ## Content Structure    
 ```html
 ├── DCGAN
-|	├── lab6-TextStyle-nbgao.ipynb
-|	└── lab6-TextStyle-nbgao.html
+|	├── lab7-DCGAN-nbgao.ipynb
+|	├── lab7-DCGAN-nbgao.html
+|	└── dcgan.py
 ├── WGAN			
-|	├── lab6-Translation-Seq2seq-nbgao.ipynb
-|	└── lab6-Translation-Seq2seq-nbgao.html
+|	├── lab7-WGAN-nbgao.ipynb
+|	├── lab7-WGAN-nbgao.html
+|	└── wgan-gp.py
 └── readme.md
 ```
 
 ##  Main Content
 1. DCGAN  
 2. WGAN  
-3. Cycle GAN  
+~~3. Cycle GAN~~  
 
 ## Version Update
 2019.08.13  V1.0.0 First draft  
